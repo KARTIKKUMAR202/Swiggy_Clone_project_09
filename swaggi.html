@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiggy Homepage</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.logo {
+    color: #fc8019;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 17px;
+    color: #555;
+}
+
+.search {
+    width: 40%;
+    padding: 17px;
+    border: none;
+    background: #f3f3f3;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.profile {
+    font-size: 30px;
+}
+
+/* Hero Section */
+.hero {
+    margin: 40px auto;
+    width: 84%;
+    height: 430px;
+    border-radius: 35px;
+    background:
+    linear-gradient(to right, rgba(0,0,0,.75), transparent),
+    url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/Food_collectionbanner.png")
+    center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 150px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+}
+
+/* Food Section */
+.food-section {
+    width: 84%;
+    margin: 40px auto;
+}
+
+.food-section h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.food-items {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+}
+
+.food {
+    min-width: 140px;
+    text-align: center;
+}
+
+.food img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.food h3 {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    nav {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .hero {
+        width: 92%;
+        height: 280px;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero h2 {
+        margin-bottom: 100px;
+    }
+
+    .food-section {
+        width: 92%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🛵 Swiggy</div>
+
+    <div class="location">
+        📍 Setup your precise location
+    </div>
+
+    <input class="search"
+    type="text"
+    placeholder="Search for restaurant and food">
+
+    <div class="profile">👤</div>
+</nav>
+
+<section class="hero">
+    <h2>🍽 Food</h2>
+    <h1>Order Food Online in Meerut</h1>
+</section>
+
+<section class="food-section">
+    <h2>What's on your mind?</h2>
+
+    <div class="food-items">
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300">
+            <h3>Burger</h3>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300">
+            <h3>Pizza</h3>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300">
+            <h3>Noodles</h3>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300">
+            <h3>Rolls</h3>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
+            <h3>North Indian</h3>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
